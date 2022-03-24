@@ -2,8 +2,7 @@
 clear all
 close all
 clc
-
-% Carico immagine e la converto in scala di grigi
+% Carico immagine e la converto in scala di grigiDDDD
 A = rgb2gray(imread('tex.jpg'));
 [M,N] = size(A);
 
