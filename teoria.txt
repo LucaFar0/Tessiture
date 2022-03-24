@@ -1,0 +1,2 @@
+Il riconoscimento dei difetti su una tessitura si basa sul fatto che l'immagine che rappresenta la tessitura rappresenta la costante ripetizioe di un pattern.
+Andando a prendere delle sezioni di immagine e eseguendone la cross correlazione si può trovare un difetto quando la abbiamo una cross correlazione è molto bassa, ovvvero il pattern non si ripete perfettamente.
