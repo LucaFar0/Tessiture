@@ -1,0 +1,28 @@
+% GESTIONE CARTELLA DI INPUT E CREAZIONE ARRAY DI IMMAGINI, ELIMINAZIONI
+% RISULTATI PRECEDENTI
+clear all
+close all
+clc
+
+delete('difetti\*.png')
+
+all_files = dir;
+all_dir = all_files([all_files(:).isdir]);
+num_dir = numel(all_dir);
+% Carico immagine e la converto in scala di grigiDDDD
+while(){
+    A = rgb2gray(imread('test\tex.jpg'));
+    [M,N] = size(A);
+}
+% CICLO DI RICONOSCIMENTO ERRORI
+%TODO:
+%   -Riconoscimento pattern 
+%   -Definire se un errore esiste o meno 
+%   -generazione immagine finale
+
+
+
+%SALVATAGGIO DELLE IMMAGINI NELLA CARTELLA
+dest = strcat('difetti', num2str(num));
+%salvo il difetto come file png
+print(X, strcat('difetti\', dest), '-dpng');
