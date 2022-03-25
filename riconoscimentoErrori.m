@@ -2,8 +2,11 @@
 clear all
 close all
 clc
+
+delete('difetti\*.png')
+
 % Carico immagine e la converto in scala di grigiDDDD
-A = rgb2gray(imread('tex.jpg'));
+A = rgb2gray(imread('test\tex.jpg'));
 [M,N] = size(A);
 
 % Definisco una serie di pattern, tutti quadrati 14x14
@@ -98,6 +101,12 @@ A1(mask2)=255;
 
 % Visualizzo a lato immagine A e immagine con il difetto evidenziato in rosso  
 Af = cat(3,A1,A,A);
-figure;
+X = figure;
 imshowpair(A,Af,'montage')
 title ('Immagine e Difetto finale')
+
+
+num = 22;dest = strcat('difetti', num2str(num));
+%salvo il difetto come file png
+print(X, strcat('difetti\', dest), '-dpng');
+
