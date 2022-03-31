@@ -6,7 +6,7 @@ clc
 delete('difetti\*.png')
 
 % Carico immagine e la converto in scala di grigiDDDD
-A = rgb2gray(imread('test\test13.jpg'));
+A = rgb2gray(imread('test\test19.jpg'));
 [M,N] = size(A);
 
 % Definisco una serie di pattern, tutti quadrati 14x14
@@ -71,7 +71,7 @@ c=abs(c);
 
 % A partire dalla cross-correlazione stimata, creo una maschera
 % selezionando tutti i valori inferiori a 0.2 e la visualizzo 
-mask = c<0.15;
+mask = c<0.05;
 figure, imagesc(mask)
 title ('Maschera 1')
 
